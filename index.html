@@ -41,22 +41,20 @@
     .section_1 {
       display: flex;
       align-items: center;
-      text-align: center;
+      justify-content: center
     }
 
     .section_1 section {
-      max-width: 400px;
+      max-width: 300px;
       line-height: 1.5;
       color: #fff;
       z-index: 100
     }
 
     .section_1 section h1 {
-
       font-size: 30px;
       font-weight: 700;
     }
-
     .btn {
       margin: 0 auto
     }
@@ -82,14 +80,24 @@
 
     .section_2 section {
       margin-left: 30px;
-      margin-top: 30px;
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 400px;
-      width: 280px;
+      height: 40%;
+      width: 70%;
       background-color: rgba(255, 255, 255, 0.7)
     }
+    .section_2 secction:last-of-type{
+      margin-top:50px;
+      position: relative
+    }
+    .section_2 section .btn {
+      left: auto;
+      right: auto;
+      bottom: 20px;
+      position:absolute
+  }
   }
 
   /* 平板 pc */
@@ -99,7 +107,7 @@
     }
 
     .section_1 section {
-      max-width: 400px;
+      max-width: 330px;
       line-height: 1.5;
       color: #fff;
       position: absolute;
