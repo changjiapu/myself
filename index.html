@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>子谦的个人网站</title>
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    letter-spacing: 2px
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  body {
+    font-family: Tahoma, Arial, Helvetica, "宋体";
+    text-align: center;
+    background: #FFF;
+    color: #000;
+  }
+
+  .section_1 {
+    width: 100%;
+    background-image: url('./images/bg-img-01.jpg');
+    background-size: 100% 110%;
+    background-attachment: fixed;
+  }
+/* 手机 */
+  @media screen and (max-width:600px) {
+    .section_1 {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section_1 section {
+      max-width: 400px;
+      line-height: 1.5;
+      color: #fff;
+      z-index: 100
+    }
+
+    .section_1 section h1 {
+
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .btn {
+      margin: 0 auto
+    }
+
+  .navbar {
+    position: fixed;
+    top: 30px;
+    left: 5px;
+    z-index: 999;
+  }
+
+
+    .btn {
+      margin-top: 30px;
+      display: block;
+      color: #fff;
+      line-height: 40px;
+      height: 40px;
+      width: 110px;
+      background-color: #DE7178;
+      border-radius: 5px
+    }
+
+    .section_2 section {
+      margin-left: 30px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      width: 280px;
+      background-color: rgba(255, 255, 255, 0.7)
+    }
+  }
+
+  /* 平板 pc */
+  @media screen and (min-width:600px) {
+    .section_1 {
+      position: relative
+    }
+
+    .section_1 section {
+      max-width: 400px;
+      line-height: 1.5;
+      color: #fff;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      z-index: 100
+    }
+
+    .section_1 section h1 {
+      text-align: left;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    P {
+      text-align: left;
+    }
+
+    .section_2 section {
+      margin-left: 30px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      width: 320px;
+      background-color: rgba(255, 255, 255, 0.7)
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: block;
+      color: #fff;
+      line-height: 50px;
+      height: 50px;
+      width: 150px;
+      background-color: #DE7178;
+      border-radius: 5px
+    }
+    .navbar {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 999;
+  }
+
+  }
+
+  .section_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url('./images/bg-img-02.jpg');
+    background-size: 100% 110%;
+    background-attachment: fixed;
+    position: relative
+  }
+
+
+  .section_2 section .btn {
+    margin-top: 150px
+  }
+
+  .section_3 {
+    width: 100%;
+    background-image: url('./images/bg-img-03.jpg');
+    background-size: 100% 110%;
+    background-attachment: fixed;
+    position: relative
+  }
+
+
+  .btn:hover {
+    background-color: #E8313D;
+  }
+
+ 
+  .navbar .show {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.24s 0.2s;
+  }
+
+  .navbar .show:hover {
+    opacity: 0
+  }
+
+  .navbar .menu {
+    width: 20px;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 20px;
+    list-style: none;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 1.4s 0.07s;
+    z-index: -1;
+  }
+
+  .navbar .menu li {
+    margin-top: 15px;
+  }
+
+  .navbar .menu li a:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: #99b977;
+  }
+
+  .navbar:hover .menu {
+    transition: transform 0.4s 0.08s, z-index 0s 0.5s;
+    transform: scale(1);
+    z-index: 1;
+  }
+
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="show wow bounceInUp">导航</div>
+    <ul class="menu">
+      <li><a href="#section-1" id='nav1'>座右铭</a></li>
+      <li><a href="#section-2" id='nav2'>个人简介</a></li>
+      <li><a href="#section-3" id='nav3'>作品</a></li>
+    </ul>
+  </nav>
+  <div class="section_1 bg" id='section-1'>
+    <section class="wow bounceInLeft" data-wow-delay='.3s'>
+      <h1>子谦</h1>
+      <p style="margin-top:20px">Never underestimate your power to change yourself，Try to be a good person.</p>
+      <a href="#section-2" id='next' class="btn">下一页...</a>
+    </section>
+  </div>
+  <div class="section_2 bg" id='section-2'>
+    <section class="content1 wow flipInY" data-wow-delay='.5s'>
+      <h1>子谦</h1>
+      <p style="margin-top:20px">Never underestimate your power to change yourself，Try to be a good person.</p>
+    </section>
+    <section class="content2 wow flipInY" data-wow-delay='.5s'>
+      <h1>子谦</h1>
+      <p style="margin-top:20px">Never underestimate your power to change yourself，Try to be a good person.</p>
+      <a href="#section-3" id='next2' class="btn">下一页...</a>
+    </section>
+  </div>
+  <div class="section_3 bg" id='section-3'>
+    <section>
+    </section>
+  </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
+<script>
+  window.onload = function () {
+    const h = window.innerHeight;
+    let el = document.getElementsByClassName('bg')
+    for (let i = 0; i < el.length; i++) {
+      el[i].style.height = h + 'px'
+    }
+    window.addEventListener('resize', function () {
+      const h = window.innerHeight;
+      for (let i = 0; i < el.length; i++) {
+        el[i].style.height = h + 'px'
+      }
+    })
+  }
+  $(function () {
+    $('#next').click(function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
+    $('#next2').click(function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
+    $('#nav1').click(function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
+    $('#nav2').click(function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
+    $('#nav3').click(function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
+  });
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+    new WOW().init();
+  };
+</script>
+
+</html>
